@@ -121,5 +121,5 @@ function getDevolutionEmailThreads() {
 }
 
 function sendRenovationFailedEmail(body){
-  GmailApp.sendEmail(PropertiesService.getScriptProperties().getProperty('notificationEmail'), 'Falha na renovação', body)
+  GmailApp.sendEmail(PropertiesService.getUserProperties().getProperty('notificationEmail'), 'Falha na renovação', body)
 }
